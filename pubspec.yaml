@@ -1,7 +1,7 @@
 name: notices_app
 description: "A test project for the Flutter Bloc library, using Dio for network requests"
 publish_to: 'none'
-version: 0.0.1
+version: 0.1.0
 
 environment:
   sdk: ^3.7.2
@@ -15,6 +15,7 @@ dependencies:
   equatable: ^2.0.7
   intl: ^0.20.2
   go_router: ^15.1.2
+  flutter_dotenv: ^5.2.1
 
 
 dev_dependencies:
@@ -24,3 +25,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+  - .env

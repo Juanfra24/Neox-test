@@ -14,7 +14,7 @@ final appRouter = GoRouter(
         GoRoute(
           path: '/home',
           builder:
-              (BuildContext context, GoRouterState state) => const FirstPage(),
+              (BuildContext context, GoRouterState state) => const HomePage(),
         ),
         GoRoute(
           path: '/favorites',
