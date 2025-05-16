@@ -1,7 +1,7 @@
 name: notices_app
-description: "A new Flutter project."
+description: "A test project for the Flutter Bloc library, using Dio for network requests"
 publish_to: 'none'
-version: 0.1.0
+version: 0.0.1
 
 environment:
   sdk: ^3.7.2
@@ -12,7 +12,6 @@ dependencies:
 
   flutter_bloc: ^9.1.1
   dio: ^5.3.3
-  shared_preferences: ^2.2.1
   equatable: ^2.0.7
   intl: ^0.20.2
   go_router: ^15.1.2
