@@ -15,7 +15,7 @@ class NewsDatasourceImpl implements NewsDatasource {
         API.HEADLINES,
         queryParameters: {'country': 'us', 'apiKey': API.API_KEY},
       );
-      print(response.data);
+
       if (response.statusCode == 200) {
         return response.data;
       } else {

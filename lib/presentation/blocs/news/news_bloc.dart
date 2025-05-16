@@ -1,25 +1,25 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notices_app/domain/entities/news_article.dart';
-import 'package:notices_app/domain/usecases/get_chile_latest_articles.dart';
+import 'package:notices_app/domain/usecases/get_usa_latest_articles.dart';
 
 part 'news_event.dart';
 part 'news_state.dart';
 
 class NewsBloc extends Bloc<NewsEvent, NewsState> {
-  final GetChileLatestArticles _chileLatestArticles;
+  final GetUsaLatestArticles _usaLatestArticles;
 
-  NewsBloc(this._chileLatestArticles) : super(NewsListInitial()) {
-    on<GetLatestChileNews>((event, emit) async {
+  NewsBloc(this._usaLatestArticles) : super(NewsListInitial()) {
+    on<GetLatestUsaNews>((event, emit) async {
       emit(NewsListLoading());
       try {
-        final news = await _chileLatestArticles();
+        final news = await _usaLatestArticles();
         emit(NewsListLoaded(news: news));
       } catch (e) {
         emit(NewsListError(message: 'Failed to fetch news: $e'));
       }
     });
 
-    add(GetLatestChileNews());
+    add(GetLatestUsaNews());
   }
 }

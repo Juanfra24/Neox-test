@@ -9,9 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Fetch latest new logic
-- Home page list display
-- Api env
+- Add favorite feature
+
+### Updated
+
+- change chile fetch article usecase to usa
+
 
 ## [0.1] - 2025-05-16
 

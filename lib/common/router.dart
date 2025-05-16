@@ -19,7 +19,8 @@ final appRouter = GoRouter(
         GoRoute(
           path: '/favorites',
           builder:
-              (BuildContext context, GoRouterState state) => const SecondPage(),
+              (BuildContext context, GoRouterState state) =>
+                  const FavoritesPage(),
         ),
       ],
       builder: (BuildContext context, GoRouterState state, Widget child) {

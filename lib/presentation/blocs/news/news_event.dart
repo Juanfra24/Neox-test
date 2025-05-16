@@ -7,4 +7,4 @@ abstract class NewsEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class GetLatestChileNews extends NewsEvent {}
+class GetLatestUsaNews extends NewsEvent {}
